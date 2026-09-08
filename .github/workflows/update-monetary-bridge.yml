@@ -1,0 +1,76 @@
+name: Update China–Hong Kong Monetary Bridge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 1,5,9,13 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: china-hong-kong-monetary-bridge
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh official HKMA data
+        run: node scripts/update-bridge.mjs
+
+      - name: Validate output
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const d = JSON.parse(fs.readFileSync('data/bridge.json','utf8'));
+
+          if (d.status !== 'live') {
+            throw new Error('bridge status is not live');
+          }
+
+          if (!Number.isFinite(d.current?.pressureIndex)) {
+            throw new Error('missing pressure index');
+          }
+
+          if (!Number.isFinite(d.current?.usdHkd)) {
+            throw new Error('missing USD/HKD');
+          }
+
+          if (!Number.isFinite(d.current?.cnyHkd)) {
+            throw new Error('missing RMB/HKD');
+          }
+
+          if (!Array.isArray(d.history) || d.history.length < 20) {
+            throw new Error('insufficient history');
+          }
+
+          console.log(
+            `asOf=${d.current.asOf} pressure=${d.current.pressureIndex} history=${d.history.length}`
+          );
+          NODE
+
+      - name: Commit refreshed data
+        shell: bash
+        run: |
+          if git diff --quiet -- data/bridge.json; then
+            echo "No bridge-data changes."
+            exit 0
+          fi
+
+          git config user.name "bondstats-monetary-bridge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/bridge.json
+          git commit -m "chore: refresh China-Hong Kong monetary bridge"
+          git push
