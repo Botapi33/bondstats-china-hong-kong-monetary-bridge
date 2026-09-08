@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "status": "awaiting_refresh",
+  "title": "BondStats China\u2013Hong Kong Monetary Bridge",
+  "methodology": "BS-MBPI v1",
+  "current": {
+    "asOf": null,
+    "pressureIndex": null,
+    "usdHkd": null,
+    "cnyHkd": null,
+    "cnyUsd": null,
+    "pegPosition": null,
+    "aggregateBalance": null,
+    "hibor1m": null,
+    "baseRate": null,
+    "rmbFacility1600": null,
+    "cnyHkdChange20d": null,
+    "signals": {
+      "peg": null,
+      "funding": null,
+      "liquidity": null,
+      "rmbFacility": null,
+      "fxMomentum": null
+    }
+  },
+  "history": [],
+  "sources": [],
+  "notes": [
+    "Run the GitHub Action once to populate official HKMA data."
+  ]
+}

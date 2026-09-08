@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b09">
+  <title>BondStats China–Hong Kong Monetary Bridge</title>
+  <meta name="description" content="A live institutional map of the RMB/HKD monetary bridge: exchange-rate corridor, HKD peg pressure, interbank liquidity, RMB liquidity facilities and Connect infrastructure.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="terminal">
+    <header class="mast">
+      <div>
+        <div class="brand">BONDSTATS <span>MONETARY BRIDGE</span></div>
+        <div class="micro">MAINLAND RMB ↔ HONG KONG ↔ USD SYSTEM</div>
+      </div>
+      <div class="statusline">
+        <span class="pulse"></span>
+        <span id="freshness">awaiting official data refresh</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">CHINA / HONG KONG · CROSS-BORDER MONETARY INFRASTRUCTURE</div>
+        <h1>The monetary bridge.</h1>
+        <p>Track the price, liquidity and institutional channels linking the renminbi to Hong Kong’s dollar system — without reducing the relationship to a simple FX quote.</p>
+      </div>
+
+      <aside class="pressure-docket">
+        <div class="docket-top">
+          <span>Bridge Pressure</span>
+          <span id="asOf">—</span>
+        </div>
+        <div class="pressure-score">
+          <strong id="pressureScore">—</strong>
+          <div>
+            <b id="pressureRegime">Awaiting refresh</b>
+            <small>BondStats composite · 0 open → 100 dislocated</small>
+          </div>
+        </div>
+        <div class="pressure-axis">
+          <i id="pressurePointer"></i>
+          <span>OPEN</span><span>NORMAL</span><span>FRICTION</span><span>PRESSURE</span><span>DISLOCATION</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="bridge-field" aria-label="Monetary bridge map">
+      <div class="bridge-caption">LIVE MONETARY CORRIDOR</div>
+
+      <div class="bridge-grid">
+        <article class="realm mainland">
+          <div class="realm-number">01</div>
+          <div class="realm-tag">MAINLAND CHINA</div>
+          <h2>RMB</h2>
+          <p>Domestic monetary conditions and the renminbi price signal enter Hong Kong through a separate legal and market infrastructure.</p>
+          <div class="realm-readout">
+            <span>RMB / HKD</span>
+            <strong id="cnyHkd">—</strong>
+            <small id="cnyHkdChange">official HKMA daily reference</small>
+          </div>
+        </article>
+
+        <div class="bridge-core">
+          <div class="line line-left"></div>
+          <div class="line line-right"></div>
+          <div class="node node-a"><span>BOND<br>CONNECT</span></div>
+          <div class="node node-b"><span>SWAP<br>CONNECT</span></div>
+          <div class="node node-c live"><span>HK<br>GATEWAY</span></div>
+          <div class="bridge-label top">CAPITAL ACCESS</div>
+          <div class="bridge-label bottom">CLEARING · FUNDING · SETTLEMENT</div>
+        </div>
+
+        <article class="realm hongkong">
+          <div class="realm-number">02</div>
+          <div class="realm-tag">HONG KONG</div>
+          <h2>HKD</h2>
+          <p>The Linked Exchange Rate System anchors HKD to USD while Hong Kong simultaneously hosts the world’s core offshore RMB infrastructure.</p>
+          <div class="realm-readout">
+            <span>USD / HKD</span>
+            <strong id="usdHkd">—</strong>
+            <small id="pegText">7.75 — 7.85 convertibility zone</small>
+          </div>
+        </article>
+      </div>
+
+      <div class="peg-meter-wrap">
+        <div class="peg-meta"><span>HKD PEG POSITION</span><b id="pegPositionLabel">—</b></div>
+        <div class="peg-meter">
+          <i id="pegPointer"></i>
+          <span class="strong">7.75 STRONG-SIDE</span>
+          <span class="mid">7.80</span>
+          <span class="weak">7.85 WEAK-SIDE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-deck">
+      <div class="section-head">
+        <div>
+          <div class="section-label">BRIDGE SIGNALS</div>
+          <h2>Where pressure is accumulating.</h2>
+        </div>
+        <div class="timestamp">OFFICIAL SOURCE LAYER · HKMA OPEN API</div>
+      </div>
+
+      <div class="signal-rows">
+        <div class="signal-row">
+          <div class="signal-name"><b>HKD peg pressure</b><span>distance from the 7.80 midpoint</span></div>
+          <div class="signal-track"><i id="sigPeg"></i></div>
+          <strong id="sigPegVal">—</strong>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name"><b>HKD funding pressure</b><span>1M HIBOR relative to recent history</span></div>
+          <div class="signal-track"><i id="sigFunding"></i></div>
+          <strong id="sigFundingVal">—</strong>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name"><b>Interbank liquidity pressure</b><span>inverse percentile of Aggregate Balance</span></div>
+          <div class="signal-track"><i id="sigLiquidity"></i></div>
+          <strong id="sigLiquidityVal">—</strong>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name"><b>RMB facility pressure</b><span>HKMA RMB liquidity-facility usage</span></div>
+          <div class="signal-track"><i id="sigRmb"></i></div>
+          <strong id="sigRmbVal">—</strong>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name"><b>RMB/HKD momentum</b><span>20-session cross-rate movement</span></div>
+          <div class="signal-track"><i id="sigFx"></i></div>
+          <strong id="sigFxVal">—</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="liquidity-tape">
+      <div class="tape-cell">
+        <span>AGGREGATE BALANCE</span>
+        <strong id="aggregateBalance">—</strong>
+        <small>HK$ mn</small>
+      </div>
+      <div class="tape-cell">
+        <span>1M HIBOR</span>
+        <strong id="hibor1m">—</strong>
+        <small>% p.a.</small>
+      </div>
+      <div class="tape-cell">
+        <span>HKMA BASE RATE</span>
+        <strong id="baseRate">—</strong>
+        <small>% p.a.</small>
+      </div>
+      <div class="tape-cell">
+        <span>RMB FACILITY @ 16:00</span>
+        <strong id="rmbFacility">—</strong>
+        <small>RMB mn</small>
+      </div>
+      <div class="tape-cell">
+        <span>RMB / USD CROSS</span>
+        <strong id="cnyUsd">—</strong>
+        <small>derived from HKMA FX references</small>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <div class="section-head">
+        <div>
+          <div class="section-label">PRESSURE TRACE</div>
+          <h2>How the bridge has moved.</h2>
+        </div>
+        <div class="range-controls">
+          <button data-range="90">3M</button>
+          <button data-range="260" class="active">1Y</button>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <canvas id="pressureChart" height="330"></canvas>
+        <div class="chart-labels"><span>OPEN</span><span>NORMAL</span><span>FRICTION</span><span>PRESSURE</span><span>DISLOCATION</span></div>
+      </div>
+    </section>
+
+    <section class="infrastructure">
+      <div class="section-head">
+        <div>
+          <div class="section-label">INSTITUTIONAL BRIDGE</div>
+          <h2>Not one market. Four connecting mechanisms.</h2>
+        </div>
+      </div>
+
+      <div class="infra-rail">
+        <article>
+          <span>01</span>
+          <b>Bond Connect</b>
+          <p>Fixed-income market access connecting international investors and Mainland China through Hong Kong infrastructure.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <b>Swap Connect</b>
+          <p>Cross-border access to onshore CNY interest-rate swaps, linking CFETS, SHCH and OTC Clear.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <b>RMB liquidity facilities</b>
+          <p>HKMA liquidity arrangements supporting intraday and overnight offshore RMB funding conditions.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <b>HKD Linked Exchange Rate System</b>
+          <p>The USD anchor that defines Hong Kong’s monetary boundary while the city intermediates RMB capital flows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="method-strip">
+      <div>
+        <div class="section-label">BONDSTATS METHOD</div>
+        <h2>A pressure map, not an FX forecast.</h2>
+      </div>
+      <p>The BondStats Bridge Pressure Index combines HKD peg position, HIBOR, Aggregate Balance, RMB liquidity-facility usage and RMB/HKD momentum. It is a proprietary monitoring composite intended to identify tightening or dislocation across the bridge; it is not an official HKMA, PBOC or HKEX indicator.</p>
+    </section>
+
+    <footer class="source-footer">
+      <div>
+        <b>Primary live data</b>
+        <span>Hong Kong Monetary Authority Open API</span>
+      </div>
+      <div>
+        <b>Institutional references</b>
+        <span>HKMA · HKEX Connect programmes</span>
+      </div>
+      <div class="health">
+        <span class="pulse"></span>
+        <b id="sourceHealth">Awaiting first automated refresh</b>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
