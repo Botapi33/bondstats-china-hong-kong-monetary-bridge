@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T07:04:38.745Z",
+  "generatedAt": "2026-09-29T07:04:30.677Z",
   "status": "live",
   "title": "BondStats China–Hong Kong Monetary Bridge",
   "methodology": "BS-MBPI v1",
@@ -20,14 +20,14 @@
       "peg": 78,
       "funding": 58.8,
       "liquidity": 25.5,
-      "rmbFacility": 93,
+      "rmbFacility": 92.8,
       "fxMomentum": 36.8
     }
   },
   "history": [
     {
       "date": "2025-06-11",
-      "pressureIndex": 49.6
+      "pressureIndex": 49.5
     },
     {
       "date": "2025-06-12",
@@ -43,7 +43,7 @@
     },
     {
       "date": "2025-06-17",
-      "pressureIndex": 47
+      "pressureIndex": 46.9
     },
     {
       "date": "2025-06-18",
@@ -59,15 +59,15 @@
     },
     {
       "date": "2025-06-23",
-      "pressureIndex": 40.7
+      "pressureIndex": 40.6
     },
     {
       "date": "2025-06-24",
-      "pressureIndex": 48.2
+      "pressureIndex": 48.1
     },
     {
       "date": "2025-06-25",
-      "pressureIndex": 45
+      "pressureIndex": 44.9
     },
     {
       "date": "2025-06-26",
@@ -83,11 +83,11 @@
     },
     {
       "date": "2025-07-02",
-      "pressureIndex": 48.9
+      "pressureIndex": 48.8
     },
     {
       "date": "2025-07-03",
-      "pressureIndex": 46.5
+      "pressureIndex": 46.4
     },
     {
       "date": "2025-07-04",
@@ -95,11 +95,11 @@
     },
     {
       "date": "2025-07-07",
-      "pressureIndex": 42.8
+      "pressureIndex": 42.7
     },
     {
       "date": "2025-07-08",
-      "pressureIndex": 42.8
+      "pressureIndex": 42.7
     },
     {
       "date": "2025-07-09",
@@ -111,7 +111,7 @@
     },
     {
       "date": "2025-07-11",
-      "pressureIndex": 42.8
+      "pressureIndex": 42.7
     },
     {
       "date": "2025-07-14",
@@ -123,7 +123,7 @@
     },
     {
       "date": "2025-07-16",
-      "pressureIndex": 43.4
+      "pressureIndex": 43.3
     },
     {
       "date": "2025-07-17",
@@ -147,19 +147,19 @@
     },
     {
       "date": "2025-07-24",
-      "pressureIndex": 42.8
+      "pressureIndex": 42.7
     },
     {
       "date": "2025-07-25",
-      "pressureIndex": 48.7
+      "pressureIndex": 48.6
     },
     {
       "date": "2025-07-28",
-      "pressureIndex": 49.7
+      "pressureIndex": 49.6
     },
     {
       "date": "2025-07-29",
-      "pressureIndex": 43.1
+      "pressureIndex": 43
     },
     {
       "date": "2025-07-30",
@@ -167,15 +167,15 @@
     },
     {
       "date": "2025-07-31",
-      "pressureIndex": 45.3
+      "pressureIndex": 45.2
     },
     {
       "date": "2025-08-01",
-      "pressureIndex": 50.3
+      "pressureIndex": 50.2
     },
     {
       "date": "2025-08-04",
-      "pressureIndex": 42.6
+      "pressureIndex": 42.5
     },
     {
       "date": "2025-08-06",
@@ -187,7 +187,7 @@
     },
     {
       "date": "2025-08-08",
-      "pressureIndex": 43.1
+      "pressureIndex": 43
     },
     {
       "date": "2025-08-11",
@@ -199,7 +199,7 @@
     },
     {
       "date": "2025-08-13",
-      "pressureIndex": 48.6
+      "pressureIndex": 48.5
     },
     {
       "date": "2025-08-14",
@@ -219,7 +219,7 @@
     },
     {
       "date": "2025-08-20",
-      "pressureIndex": 51.5
+      "pressureIndex": 51.6
     },
     {
       "date": "2025-08-21",
@@ -239,23 +239,23 @@
     },
     {
       "date": "2025-08-27",
-      "pressureIndex": 56
+      "pressureIndex": 56.1
     },
     {
       "date": "2025-08-28",
-      "pressureIndex": 42
+      "pressureIndex": 42.1
     },
     {
       "date": "2025-08-29",
-      "pressureIndex": 40.1
+      "pressureIndex": 40.2
     },
     {
       "date": "2025-09-01",
-      "pressureIndex": 27.5
+      "pressureIndex": 27.6
     },
     {
       "date": "2025-09-02",
-      "pressureIndex": 35.3
+      "pressureIndex": 35.4
     },
     {
       "date": "2025-09-03",
@@ -275,23 +275,23 @@
     },
     {
       "date": "2025-09-09",
-      "pressureIndex": 47.9
+      "pressureIndex": 48
     },
     {
       "date": "2025-09-10",
-      "pressureIndex": 46.8
+      "pressureIndex": 46.9
     },
     {
       "date": "2025-09-11",
-      "pressureIndex": 47.5
+      "pressureIndex": 47.6
     },
     {
       "date": "2025-09-12",
-      "pressureIndex": 52.7
+      "pressureIndex": 52.8
     },
     {
       "date": "2025-09-15",
-      "pressureIndex": 57.5
+      "pressureIndex": 57.6
     },
     {
       "date": "2025-09-16",
@@ -299,11 +299,11 @@
     },
     {
       "date": "2025-09-17",
-      "pressureIndex": 53
+      "pressureIndex": 53.1
     },
     {
       "date": "2025-09-18",
-      "pressureIndex": 55.3
+      "pressureIndex": 55.4
     },
     {
       "date": "2025-09-19",
@@ -311,7 +311,7 @@
     },
     {
       "date": "2025-09-22",
-      "pressureIndex": 56.7
+      "pressureIndex": 56.8
     },
     {
       "date": "2025-09-23",
@@ -335,19 +335,19 @@
     },
     {
       "date": "2025-10-02",
-      "pressureIndex": 43.3
+      "pressureIndex": 43.4
     },
     {
       "date": "2025-10-03",
-      "pressureIndex": 41.7
+      "pressureIndex": 41.8
     },
     {
       "date": "2025-10-06",
-      "pressureIndex": 43.8
+      "pressureIndex": 43.9
     },
     {
       "date": "2025-10-08",
-      "pressureIndex": 41.5
+      "pressureIndex": 41.6
     },
     {
       "date": "2025-10-09",
@@ -391,7 +391,7 @@
     },
     {
       "date": "2025-10-23",
-      "pressureIndex": 46.4
+      "pressureIndex": 46.5
     },
     {
       "date": "2025-10-24",
@@ -407,11 +407,11 @@
     },
     {
       "date": "2025-10-30",
-      "pressureIndex": 48.2
+      "pressureIndex": 48.3
     },
     {
       "date": "2025-10-31",
-      "pressureIndex": 58.6
+      "pressureIndex": 58.7
     },
     {
       "date": "2025-11-03",
@@ -419,27 +419,27 @@
     },
     {
       "date": "2025-11-04",
-      "pressureIndex": 51.3
+      "pressureIndex": 51.4
     },
     {
       "date": "2025-11-05",
-      "pressureIndex": 42.8
+      "pressureIndex": 42.9
     },
     {
       "date": "2025-11-06",
-      "pressureIndex": 49.8
+      "pressureIndex": 49.9
     },
     {
       "date": "2025-11-07",
-      "pressureIndex": 52.4
+      "pressureIndex": 52.5
     },
     {
       "date": "2025-11-10",
-      "pressureIndex": 46.8
+      "pressureIndex": 46.9
     },
     {
       "date": "2025-11-11",
-      "pressureIndex": 42.7
+      "pressureIndex": 42.8
     },
     {
       "date": "2025-11-12",
@@ -447,11 +447,11 @@
     },
     {
       "date": "2025-11-13",
-      "pressureIndex": 53.5
+      "pressureIndex": 53.6
     },
     {
       "date": "2025-11-14",
-      "pressureIndex": 53.2
+      "pressureIndex": 53.3
     },
     {
       "date": "2025-11-17",
@@ -459,11 +459,11 @@
     },
     {
       "date": "2025-11-18",
-      "pressureIndex": 42.5
+      "pressureIndex": 42.6
     },
     {
       "date": "2025-11-19",
-      "pressureIndex": 29.9
+      "pressureIndex": 29.8
     },
     {
       "date": "2025-11-20",
@@ -475,7 +475,7 @@
     },
     {
       "date": "2025-11-24",
-      "pressureIndex": 37.5
+      "pressureIndex": 37.4
     },
     {
       "date": "2025-11-25",
@@ -487,11 +487,11 @@
     },
     {
       "date": "2025-11-27",
-      "pressureIndex": 49.6
+      "pressureIndex": 49.7
     },
     {
       "date": "2025-11-28",
-      "pressureIndex": 52.5
+      "pressureIndex": 52.6
     },
     {
       "date": "2025-12-01",
@@ -499,7 +499,7 @@
     },
     {
       "date": "2025-12-02",
-      "pressureIndex": 39.4
+      "pressureIndex": 39.5
     },
     {
       "date": "2025-12-03",
@@ -507,27 +507,27 @@
     },
     {
       "date": "2025-12-04",
-      "pressureIndex": 56.6
+      "pressureIndex": 56.7
     },
     {
       "date": "2025-12-05",
-      "pressureIndex": 55.1
+      "pressureIndex": 55.2
     },
     {
       "date": "2025-12-08",
-      "pressureIndex": 60.6
+      "pressureIndex": 60.7
     },
     {
       "date": "2025-12-09",
-      "pressureIndex": 59.7
+      "pressureIndex": 59.8
     },
     {
       "date": "2025-12-10",
-      "pressureIndex": 59.3
+      "pressureIndex": 59.4
     },
     {
       "date": "2025-12-11",
-      "pressureIndex": 59.7
+      "pressureIndex": 59.8
     },
     {
       "date": "2025-12-12",
@@ -539,19 +539,19 @@
     },
     {
       "date": "2025-12-16",
-      "pressureIndex": 57.6
+      "pressureIndex": 57.7
     },
     {
       "date": "2025-12-17",
-      "pressureIndex": 59.9
+      "pressureIndex": 60
     },
     {
       "date": "2025-12-18",
-      "pressureIndex": 57.9
+      "pressureIndex": 58
     },
     {
       "date": "2025-12-19",
-      "pressureIndex": 59.5
+      "pressureIndex": 59.6
     },
     {
       "date": "2025-12-22",
@@ -563,23 +563,23 @@
     },
     {
       "date": "2025-12-24",
-      "pressureIndex": 66.8
+      "pressureIndex": 66.9
     },
     {
       "date": "2025-12-29",
-      "pressureIndex": 57.2
+      "pressureIndex": 57.3
     },
     {
       "date": "2025-12-30",
-      "pressureIndex": 66.3
+      "pressureIndex": 66.4
     },
     {
       "date": "2025-12-31",
-      "pressureIndex": 54.6
+      "pressureIndex": 54.7
     },
     {
       "date": "2026-01-02",
-      "pressureIndex": 37.7
+      "pressureIndex": 37.8
     },
     {
       "date": "2026-01-05",
@@ -607,7 +607,7 @@
     },
     {
       "date": "2026-01-13",
-      "pressureIndex": 47.2
+      "pressureIndex": 47.3
     },
     {
       "date": "2026-01-14",
@@ -639,7 +639,7 @@
     },
     {
       "date": "2026-01-23",
-      "pressureIndex": 46.1
+      "pressureIndex": 46.2
     },
     {
       "date": "2026-01-26",
@@ -663,7 +663,7 @@
     },
     {
       "date": "2026-02-02",
-      "pressureIndex": 48.1
+      "pressureIndex": 48.2
     },
     {
       "date": "2026-02-03",
@@ -675,7 +675,7 @@
     },
     {
       "date": "2026-02-05",
-      "pressureIndex": 48.7
+      "pressureIndex": 48.8
     },
     {
       "date": "2026-02-06",
@@ -683,7 +683,7 @@
     },
     {
       "date": "2026-02-09",
-      "pressureIndex": 44.6
+      "pressureIndex": 44.5
     },
     {
       "date": "2026-02-10",
@@ -695,7 +695,7 @@
     },
     {
       "date": "2026-02-12",
-      "pressureIndex": 54.2
+      "pressureIndex": 54.3
     },
     {
       "date": "2026-02-13",
@@ -707,11 +707,11 @@
     },
     {
       "date": "2026-02-20",
-      "pressureIndex": 42
+      "pressureIndex": 42.1
     },
     {
       "date": "2026-02-23",
-      "pressureIndex": 42.7
+      "pressureIndex": 42.8
     },
     {
       "date": "2026-02-24",
@@ -735,11 +735,11 @@
     },
     {
       "date": "2026-03-03",
-      "pressureIndex": 42.5
+      "pressureIndex": 42.6
     },
     {
       "date": "2026-03-04",
-      "pressureIndex": 37.1
+      "pressureIndex": 37.2
     },
     {
       "date": "2026-03-05",
@@ -767,7 +767,7 @@
     },
     {
       "date": "2026-03-13",
-      "pressureIndex": 55.3
+      "pressureIndex": 55.4
     },
     {
       "date": "2026-03-16",
@@ -815,7 +815,7 @@
     },
     {
       "date": "2026-03-31",
-      "pressureIndex": 61.7
+      "pressureIndex": 61.8
     },
     {
       "date": "2026-04-01",
@@ -835,7 +835,7 @@
     },
     {
       "date": "2026-04-10",
-      "pressureIndex": 48.9
+      "pressureIndex": 49
     },
     {
       "date": "2026-04-13",
@@ -895,11 +895,11 @@
     },
     {
       "date": "2026-05-04",
-      "pressureIndex": 44.9
+      "pressureIndex": 45
     },
     {
       "date": "2026-05-05",
-      "pressureIndex": 45.7
+      "pressureIndex": 45.8
     },
     {
       "date": "2026-05-06",
@@ -987,7 +987,7 @@
     },
     {
       "date": "2026-06-05",
-      "pressureIndex": 59.1
+      "pressureIndex": 59.2
     },
     {
       "date": "2026-06-08",
@@ -1011,7 +1011,7 @@
     },
     {
       "date": "2026-06-15",
-      "pressureIndex": 59.4
+      "pressureIndex": 59.5
     },
     {
       "date": "2026-06-16",
@@ -1055,7 +1055,7 @@
     },
     {
       "date": "2026-07-02",
-      "pressureIndex": 60.9
+      "pressureIndex": 60.8
     },
     {
       "date": "2026-07-03",
@@ -1079,7 +1079,7 @@
     },
     {
       "date": "2026-07-10",
-      "pressureIndex": 52.1
+      "pressureIndex": 52.2
     },
     {
       "date": "2026-07-13",
@@ -1095,7 +1095,7 @@
     },
     {
       "date": "2026-07-16",
-      "pressureIndex": 61.7
+      "pressureIndex": 61.8
     },
     {
       "date": "2026-07-17",
@@ -1127,7 +1127,7 @@
     },
     {
       "date": "2026-07-28",
-      "pressureIndex": 53.5
+      "pressureIndex": 53.4
     },
     {
       "date": "2026-07-29",
@@ -1135,7 +1135,7 @@
     },
     {
       "date": "2026-07-30",
-      "pressureIndex": 61.5
+      "pressureIndex": 61.6
     },
     {
       "date": "2026-07-31",
@@ -1151,11 +1151,11 @@
     },
     {
       "date": "2026-08-05",
-      "pressureIndex": 57.5
+      "pressureIndex": 57.6
     },
     {
       "date": "2026-08-06",
-      "pressureIndex": 69.3
+      "pressureIndex": 69.4
     },
     {
       "date": "2026-08-07",
@@ -1191,7 +1191,7 @@
     },
     {
       "date": "2026-08-19",
-      "pressureIndex": 56.3
+      "pressureIndex": 56.4
     },
     {
       "date": "2026-08-20",
@@ -1203,23 +1203,23 @@
     },
     {
       "date": "2026-08-24",
-      "pressureIndex": 49.3
+      "pressureIndex": 49.2
     },
     {
       "date": "2026-08-25",
-      "pressureIndex": 52.1
+      "pressureIndex": 52.2
     },
     {
       "date": "2026-08-26",
-      "pressureIndex": 55.1
+      "pressureIndex": 55
     },
     {
       "date": "2026-08-27",
-      "pressureIndex": 50.9
+      "pressureIndex": 50.8
     },
     {
       "date": "2026-08-28",
-      "pressureIndex": 55.7
+      "pressureIndex": 55.6
     },
     {
       "date": "2026-08-31",
